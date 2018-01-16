@@ -16,7 +16,7 @@
  * You should return `null` on invalid input.
  */
 
-var DIGIT_VALUES = {
+var digitValues = {
   I: 1,
   V: 5,
   X: 10,
@@ -28,6 +28,26 @@ var DIGIT_VALUES = {
 
 var translateRomanNumeral = function(romanNumeral) {
 // TODO: Implement me!
-/* START SOLUTION */
-  /* END SOLUTION */
+//romanNumeral is string, split in order to be able to compare values
+//iterate through digit Values to get value of string
+//translate roman numeral into ordinal number
+//if value of rn is smaller than another should substract
+//if rn value is sm
+//iterate through object to see values
+//add values up to give number
+//use recursive to loop through array and compare with digitValues object
+//recursive stops when it iterates through all array
+var letters = romanNumeral.split("");
+
+for(var key in digitValues){
+  for(var i = 0; i < digitValues[key].length; i++){
+    if(letters === digitValues[key]){
+      return digitValues[key][i];
+
+    }
+  }
+}
+  for(var x in letters){
+
+  }
 };
